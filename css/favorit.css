@@ -1,0 +1,168 @@
+.clearfix:before,
+.clearfix:after {
+	content: "";
+	display: table;
+}
+
+.clearfix:after {
+	clear: both;
+}
+
+section.break {
+	margin: 3.0517578125rem 1.5625rem;
+	padding: 0;
+	border-top: 2px solid #eee;
+}
+
+section.break.block-headings {
+	text-align: center;
+}
+
+section.break.block-headings .title {
+	text-align: left;
+}
+
+section.break.block-headings p {
+	margin-bottom: 4rem;
+}
+
+header.main-header {
+	margin: 3.0517578125rem 1.5625rem;
+}
+
+p {
+	margin: 1em 0;
+	max-width: 35.527136788rem;
+}
+
+p.subheading {
+	font-size: 1.25rem;
+	font-weight: 300;
+	text-align: center;
+	color: #82878c;
+	margin: -0.4rem auto 2rem;
+}
+
+p.intro {
+	font-size: 1.25rem;
+}
+
+p.aside {
+	font-size: 0.8rem;
+}
+
+p.note {
+	font-size: 0.64rem;
+	letter-spacing: 0.01rem;
+	max-width: 18.1898940355rem;
+}
+
+a {
+	color: #0073aa;
+}
+
+a:hover {
+	text-decoration: underline;
+}
+
+@media (min-width: 630px) {
+	aside p {
+		font-size: 0.8rem;
+		letter-spacing: 0.005rem;
+		max-width: 28.4217094304rem;
+	}
+}
+
+blockquote {
+	border-left: 2px solid #767676;
+	padding-left: 1rem;
+	color: #767676;
+	font-style: italic;
+}
+
+blockquote cite {
+	font-size: 0.8rem;
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.flexbox {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+.fav-btn {
+	display: flex;
+	height: 100%;
+	justify-content: center;
+	align-items: center;
+}
+
+@keyframes favme-anime {
+	0% {
+		opacity: 1;
+		font-size: 3rem;
+		-webkit-text-stroke-color: transparent;
+	}
+
+	25% {
+		opacity: 0.6;
+		color: #fff;
+		font-size: 3.8rem;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #dc3232;
+	}
+
+	75% {
+		opacity: 0.6;
+		color: #fff;
+		font-size: 4.2rem;
+		-webkit-text-stroke-width: 1px;
+		-webkit-text-stroke-color: #dc3232;
+	}
+
+	100% {
+		opacity: 1;
+		font-size: 3rem;
+		-webkit-text-stroke-color: transparent;
+	}
+}
+
+@keyframes favme-hover {
+	from {
+		font-size: 4.4rem;
+	}
+
+	80% {
+		font-size: 3rem;
+	}
+}
+
+.favme {
+	display: block;
+	font-size: 3rem;
+	width: auto;
+	height: auto;
+	cursor: pointer;
+	box-shadow: none;
+	transition: all 0.2s ease;
+	color: #cbcdce;
+	margin: 0;
+}
+
+.favme.active {
+	color: #dc3232;
+}
+
+.favme:hover {
+	animation: favme-hover 0.3s infinite alternate;
+}
+
+.favme.is_animating {
+	animation: favme-anime 0.3s;
+}
